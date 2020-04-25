@@ -14,6 +14,8 @@
 **Project Description:**
 
 Stock sector analysis using monte carlo and statistical functions.
+Build a stock selector,choose date, time, number of simulations  , that will go through monte carlo simulations, and give us the future forecast. 
+
 
 Formula 1 is proposing to build an efficient and accurate financial model to analyze the state of the economy using sector analyses to compare how each sector performs relative to different market conditions. One thought here is to conduct the sector analysis by using S&P 500 sector funds and comparing the performance to the S&P 500 as a base index.
 
