@@ -2,31 +2,38 @@
                            
 **Proposal**
 
-**Title:**  Stock sector analysis using Monte Carlo and statistical functions. 
+**Title:**  Stock sector analysis using Monte Carlo , statistical functions and portfolio optimization. 
 
 **Team Members:**
 
-1. Kelly Michelle Maldanado
+1. Kelly Michelle Maldonado
 2. Bulbul Yestemissova
-3. Gabriel Kurflan
+3. Gabriel Klurfan
 4. Chris Costanzo
 
 **Project Description:**
 
 Stock sector analysis using monte carlo and statistical functions.
 
-Formula 1 is proposing to build an efficient and accurate financial model to analyze the state of the economy using sector analyses to compare how each sector performs relative to different market conditions. One thought here is to conduct the sector analysis by using S&P 500 sector funds and comparing the performance to the S&P 500 as a base index.
+Formula 1 is proposing to build an efficient and accurate financial model to analyze the state of the economy using sector analyses to compare how each sector performs relative to different market conditions. Some measures of the state of the economy include GDP, retail sales, unemployment, consumer confidence, etc. 
 
-We will be analyzing the different sectors of the S&P 500 and forecasting with Monte Carlo. We will also look at S&P value and growth indices using Monte Carlo.  In addition,  we will analyze pre and post pandemic behavior of the sectors and indices in attempt to construct an attractive post pandemic portfolio.
+We will be analyzing the different sectors of the S&P 500 and forecasting with Monte Carlo. We will also look at S&P Value and Growth indices using Monte Carlo. These indices define growth and value using S&P's definition of growth (using sales growth, earnings change to price, and momentum) and value (using book value, earnings, and sales to price). 
 
-Given the current global economic slowdown caused by the COVID-19 pandemic, we wanted to incorporate current financial conditions to analyze the impact of the outbreak and identify which sectors/companies could compose an "Emergency-Ready" portfolio.
+Monte Carlo allows us to put confidence intervals on each sector. We will also use ratio analysis (p/e, p/sales, p/book), linear regression and time series analysis. Sector specific metrics such as standard deviation, variance and covariance, and performance versus the S&P 500 will also be used. 
+
+We are using the S&P 500 index because it is a universally accepted, well documented index with readily available sector breakdowns. It allows us to do a top down analysis on a sector level with the option of drilling down to stock level if desired. We expect our analysis could easily be expanded to broader indexes such as the Russell 3000. 
+
+We will construct a preferred portfolio using the different sectors by optimizing weights using the PyPlotOpt library. We will test this portfolio using backtesting (PyAlgoTrade).
+
+APIs and JSON data will be used to obtain data. CSVs and a SQL database will be used as needed. 
+
+Finally,  we will survey the pandemic behavior of the sectors and indices in an attempt to identify which sectors/companies could compose an "Emergency-Ready" portfolio, one that benefits from current pandemic conditions (e.g., Technology, Health Care) 
+
 
 
 **Research Questions:**
 
 What is the current state of the economy and how does this compare to pre-pandemic? 
-
-Which industries/sectors were doing the best/worst during this time and how do they compare now?
 
 Pre vs post pandemic comparisons:  Are some sectors outperforming or underperforming during the pandemic?
 
@@ -42,7 +49,7 @@ Is there a preferred mix of sectors/investing style post pandemic? What if pande
 
 **Datasets to be used:**
 
-GoogleFinance/Alpaca/Quandl - S&P 500 sector etfs, S&P 500 growth and value indices. Valuation ratios - Price to Sales, P/Es, Price to book.
+GoogleFinance/Alpaca/Quandl - S&P 500 sector etfs, S&P 500 growth and value indices, Russell 3000. Valuation ratios - Price to Sales, P/Es, Price to book. 
 
 
 **Rough breakdown of tasks:**
