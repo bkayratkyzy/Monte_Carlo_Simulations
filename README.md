@@ -33,7 +33,7 @@ Monte Carlo
 
 Freq distribution
 
-![freq_distribution.png](Images/freq_distribution.png)
+![freq_dist.png](Images/freq_dist.png)
 
 
 After the Monte Carlo analysis we used two python libraries to look deeper:
@@ -56,7 +56,7 @@ Next we used Backtesting.py with the goal of developing the best moving average 
  
 ![correlations.png](Images/correlations.png)
 
-3. Over the long-term time there is variability in returns suggesting good sector selection can increase performance. 
+3. Over the long-term there is variability in returns suggesting good sector selection can increase performance. 
 
 Poor performance -Energy
 
@@ -66,7 +66,7 @@ Good performance - Technology
 
 ![tech.png](Images/tech.png)
 
-4. Monte Carol analysis confidence intervals allowed us to define a trading range for a $10,000 investment over the next 30 days with a 95% probability. For example, 10,000 invstment in the Real Estate sector is expected to be 8245 to 12,542 in 30 days. Real Estate had the highest range. The sector with the lowest range was Consumer Staples (9210 to 11,112). 
+4. Monte Carlo analysis confidence intervals allowed us to define a trading range for a $10,000 investment over the next 30 days with a 95% probability. For example, a 10,000 investment in the Real Estate sector is expected to be 8245 to 12,542 in 30 days. Real Estate had the highest range. The sector with the lowest range was Consumer Staples (9210 to 11,112). 
 
 All of the sectors fall in the range 8200 to 12,542 and in general more upside means more downside risk which makes it difficult to say that one sector looks best. The use of 30 day Monte Carlo results depends on the investor's perspective. If one is focused on preserving assets then Consumer Staples has the least downside from a Monte Carlo perspective. If one is focused on the upside then Real Estate would be the sector to choose (although downside risk would be higher). In this way Monte Carlo can help manage risk of a porfolio. 
 
@@ -92,7 +92,7 @@ Energy
 
 ![energy_backtest.png](Images/energy_backtest.png)
 
-6. PyPortfolioOpt was used to calculate expected returns and covariance to optimize the 11 sectors to find a portfolio with the highest sharpe ratio. 
+6. PyPortfolioOpt was used to calculate expected returns and covariance to optimize the 11 sectors and find a portfolio with the highest sharpe ratio. 
 
 The max sharpe ratio portfolio was:
 
@@ -105,7 +105,7 @@ The max sharpe ratio portfolio was:
 
 This portfolio completely eliminated 7 sectors from the portfolio. (One caveat - PyPortfolioOpt has several methods to calculate expected returns and covariances. Different combinations of methods can produce different results. It also possible to constrain the optimization to have a min and max percent in each sector. We ran an unconstrained portfolio so the optimization was free to take sectors to a zero weighting.) 
 
-Compared to equally weighted portfolio the optimized portfolio outperformed. However, it is possible this outperformance comes from data mining/overfitting the data. 
+Compared to an equally weighted portfolio the optimized portfolio outperformed. However, it is possible this outperformance comes from data mining/overfitting the data. 
 
 ![optimize_equal.png](Images/optimize_equal.png)
 
