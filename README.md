@@ -1,5 +1,8 @@
 # p1-Formula_1 
 
+Presentation
+https://docs.google.com/presentation/d/1FJJeCtY7j-hHrmxG0HCm2nATrl0AXTLdxNI4-5CAyLw/edit#slide=id.g77367f15dd_0_32
+
 **PROCESS**
 
 We completed a broad Monte Carlo survey of the 11 sectors that make up the S&P500. We used the S&P500 because it a widely followed index, represents 80% of the current value of the market and currently has trillions of dollars indexed to it. 
